@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+     <title>Learning</title>
+     <meta http-equiv="refresh" content="10">
+     <meta name="viewport" content="width=device-width, intial-scale=1">
+<script src="https://fontawesome.com/icons/key-skeleton-left-right?s=solid" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://ionic.io/ionicons">
      <style>
           body {
                background-color: rgb(233, 236, 229);
@@ -48,10 +53,18 @@
                text-transform: uppercase;
                    }  
           a:link {
+               background-color: white;
                color: red;
+               border: 10px solid yellowgreen;
+               text-align: center;
+               padding: 2px 50px 2px 50px;
+               display: inline-block;
+               text-decoration: none;
                 }
           a:hover {
-               color: yellow;
+               color: black;
+               text-decoration: overline;
+               background-color: green;
                  }
           a:visited {
                color: pink;
@@ -61,7 +74,27 @@
                  }  
           a {
                       line-height: 100px;
-                 }    
+                 } 
+          ol li {
+               background-color: rgb(236, 144, 144);
+               color: black;
+          } 
+          ol.alpha {
+               list-style-type: lower-alpha;
+               background-color: rgb(97, 110, 126);
+               color: blueviolet;
+               margin: 2px;
+               padding: 10px;
+                }  
+          ul.beta {
+               list-style-type: lower-roman;
+               padding: 0px 250px 0px 10px;
+               
+                }
+          ul.hover {
+               background-color: red;
+               color: black;
+          }
           </style>
 </head> 
 <body>
@@ -82,11 +115,32 @@
      <p class="one">This paragraph shows Dashed border.</p>
      <p class="two">This paragraph shows double bordes</p>
      <p class="three">this paragraph shows margin value</p>
-     <p>Norway has beautiful mountains, glaciers and stunning fjords. 
+     <p><b>Norway has beautiful mountains, glaciers and stunning fjords. 
         Oslo, the capital, is a city of green spaces and museums. 
         Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. 
-        Norway is also known for fishing, hiking and skiing.</p>
-     <a href="saiprasanth00@gmail.com">MAIL</a><br>
-     <a href="9566678714">CALL</a>
+        Norway is also known for fishing, hiking and skiing.</p></b>
+     <a href="saiprasanth00@gmail.com"><b>MAIL</a></b><br><br>
+     <a href="9566678714"><b>CALL</a></b>
+     <i class="fa-solid fa-key-skeleton-left-right" style="font-size: 50px;"></i>
+     <i name="finger-print-outline"></i><br><br><br>
+           span tag is used to change <span style="border-style: dashed; border-width: 10px; border-color: red;">colour, style , font etc </span>of particular word or sentance in the paragraph.
+     <h1>listing</h1>
+     <ol class="alpha">
+           <li>html</li><br>
+           <li>css</li><br>
+           <li>java</li><br>
+           <li>sql</li><br>
+           <li>python</li><br>
+           <li>php</li><br>
+     </ol>
+     <ul class="beta" class="hover">
+          <li>html</li>
+          <li>css</li>
+          <li>java</li>
+          <li>sql</li>
+          <li>python</li>
+          <li>php</li>
+     </ul>
+
 </body>
 </html>
