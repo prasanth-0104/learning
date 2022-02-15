@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <title>
+                 Creating Table
+    </title>
+
+    <head>     
+                 TABLE, DISPLAY & MARGIN
+    <style>
+                 table, td, th {
+                border: 2px solid brown;
+                border-collapse: collapse;
+                width: 50%;
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding: 10px 10px 10px 10px;
+                margin: auto;
+                max-width: 100px;
+                                }
+                 h3 {
+                text-align: center;
+                color: rgb(27, 143, 62);
+                font-style: italic;
+                text-transform: uppercase;
+                    }
+                 th {
+                background-color: lightcoral;
+                color: black;
+                    }
+                 tr:hover {
+                background-color: greenyellow;
+                          }
+                 tr:nth-child(odd) {
+                background-color: lightseagreen;
+                                    }
+                span {
+                display: block;    
+                     }  
+                li.one {
+                display: inline;
+                display: show;
+                       } 
+                li.2 {
+                display: block;
+                visibility: hide;
+                       } 
+                body {
+                padding: 50px;
+                }  
+                div.static {
+                    position: static;
+                    border: 1px;
+                    border-style: dashed;
+                    margin: 50px;
+                    max-width: 500px;
+                }  
+                div.relative {
+                    position: relative;
+                    color: red;
+                    left: 50;
+                }  
+                div.fixed {
+                    position: fixed;
+                    bottom: 0;
+                    right: 0;
+                    width: 100px;
+                }   
+                div.absolute {
+                    position: absolute;
+                    color: brown;
+                    top: 0;
+                    right: 0;
+                }  
+                div.sticky {
+                    position: -webkit-sticky;
+                    position: sticky;
+                    top: 0;
+                    padding: 50px;
+                    margin: auto;
+                    max-width: 1000px;
+                }   
+                h2:hover {
+                    background-color: lightseagreen;
+                    color: brown;
+                    margin: auto;
+                }  
+                #overflow {
+                    overflow: scroll;
+                    width: 200px;
+                    height: 100px;
+                }
+    </style>
+    </head>
+    <body>
+        <div class="sticky hover">
+            <h2>This page will teach you Table,Display,Max-Width and Position of CSS-class</h2>
+             </div>
+        <h3>
+            salary for the month of oct-2021
+        </h3>
+        <div style="overflow-x: auto;">
+    <table>
+            <tr>
+                <th><b>S.NO</b></th>
+                <th><b>list of Employees</b></th>
+                <th><b>B.Salary</b></th>
+                <th><b>Per Day</b></th>
+                <th><b>Leave</b></th>
+                <th><b>Working Days</b></th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Person A</td>
+                <td>11000</td>
+                <td>423.08</td>
+                <td>2</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Person B</td>
+                <td>9724</td>
+                <td>374.0</td>
+                <td>6</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Person C</td>
+                <td>11000</td>
+                <td>423.08</td>
+                <td>0</td>
+                <td>26</td>
+            </tr>
+        </div>
+    </table><br>
+         <h3>
+                 Display
+        </h3>
+        <p>
+                 There are two types of display property<span>1.Inline</span> <span>2.Block</span>
+        </p>
+        <h4>
+                 Inline Property ex:-List type
+        </h4>
+        <ol>
+            <li class="one">List  A</li>
+            <li class="one">List B</li>
+            <li class="one">List C</li>
+            <li class="one">List D</li>
+        </ol>
+        <h4>
+                 Block Property  ex:- List type
+        </h4>
+        <ol>
+            <li class="2; hidden">List  A</li>
+            <li class="2">List B</li>
+            <li class="2; hidden">List C</li>
+            <li class="2">List D</li>
+        </ol>
+        <h3>
+                 CSS-layout position property
+        </h3><br>
+        <h4>
+                 Position:Static
+        </h4>
+             <div class="static">
+                 <p id="overflow">
+                      An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page
+                 </p>
+             </div>
+        <h4>
+             Position:Relative
+        </h4>
+             <div class="relative">
+                 <p>
+                     This div element has position: relative.
+                </p>
+             </div>
+        <h4>
+             Position:Fixied
+        </h4>
+            <p>
+                An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+            </p>
+                 <div class="fixed">
+                     <p>
+                         Prasanth Docuement
+                    <br></p>
+                             <p>
+                                 Position:Fixed
+                            </p>
+                 </div>
+        <h4>
+            Position:Absoulte
+        </h4>
+            <p>
+                An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+            However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+             </p>
+                 <div class="absolute">
+                            <p>
+                                Prasanth Docuement<span>Position:Absolute</span>
+                            </p>
+                 </div>
+        <h4>
+            Position:Sticky
+        </h4>
+             <p>
+                 An element with position: sticky; is positioned based on the user's scroll position.
+
+            A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+             </p><br>
+         <h3>
+             link
+         </h3>
+         <h4>
+             Link to web page
+         </h4>
+         <a href="https://www.google.com" 
+            target="_blank">
+                             Website Testing
+         </a>
+         <h4>
+             Link to section of the page
+         </h4>
+         <a href="#news">
+                         news-this is hyper link
+         </a>
+         <div id="news">
+                         my news-this section link
+         </div>
+         <h4>
+              Link to a script
+         </h4>
+         <a href="javascript:alert(test ok)" 
+            target="_blank" 
+            rel="noopener">
+                             Script Testing
+         </a>
+         <h4>
+             download a file
+         </h4>
+         <a href="example.jpg" 
+            download="example">
+                             <img src="example.jpg" 
+                                  alt="Download Testing" 
+                                  width="100px" 
+                                  height="100px">
+         </a>
+         <h4>
+             ping
+         </h4>
+         <a href="https://www.example.com" 
+            target="_blank" 
+            ping="https://www.example.com/tracking">
+                                                     Ping Testing
+         </a>   
+</body>
+
+</html>
