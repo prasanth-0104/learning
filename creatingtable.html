@@ -1,253 +1,263 @@
 <!DOCTYPE html>
 <!-- saved from url=(0035)http://127.0.0.1:5500/csstable.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
-                 Creating Table
-    </title>
-         
-                 </head><body>TABLE, DISPLAY &amp; MARGIN
-    
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Creating Table</title>
+  </head>
+  <body>
+    <h2 style="color: rgb(167, 114, 54)">TABLE, DISPLAY & MARGIN</h2>
+
     <style>
-                 table, td, th {
-                border: 2px solid brown;
-                border-collapse: collapse;
-                width: 50%;
-                text-align: center;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                padding: 10px 10px 10px 10px;
-                margin: auto;
-                max-width: 100px;
-                                }
-                 h3 {
-                text-align: center;
-                color: rgb(27, 143, 62);
-                font-style: italic;
-                text-transform: uppercase;
-                    }
-                 th {
-                background-color: lightcoral;
-                color: black;
-                    }
-                 tr:hover {
-                background-color: greenyellow;
-                          }
-                 tr:nth-child(odd) {
-                background-color: lightseagreen;
-                                    }
-                span {
-                display: block;    
-                     }  
-                li.one {
-                display: inline;
-                display: show;
-                       } 
-                li.2 {
-                display: block;
-                visibility: hide;
-                       } 
-                body {
-                padding: 50px;
-                }  
-                div.static {
-                    position: static;
-                    border: 1px;
-                    border-style: dashed;
-                    margin: 50px;
-                    max-width: 500px;
-                }  
-                div.relative {
-                    position: relative;
-                    color: red;
-                    left: 50;
-                }  
-                div.fixed {
-                    position: fixed;
-                    bottom: 0;
-                    right: 0;
-                    width: 100px;
-                }   
-                div.absolute {
-                    position: absolute;
-                    color: brown;
-                    top: 0;
-                    right: 0;
-                }  
-                div.sticky {
-                    position: -webkit-sticky;
-                    position: sticky;
-                    top: 0;
-                    padding: 10px;
-                    margin: auto;
-                    border-radius: 15px;
-                    border-style: dotted;
-                    max-width: 500px;
-                }   
-                div:hover {
-                    background-color: lightseagreen;
-                }  
-                #overflow {
-                    overflow: scroll;
-                    width: 200px;
-                    height: 100px;
-                }
+      table,
+      td,
+      th {
+        border: 2px solid brown;
+        border-collapse: collapse;
+        width: 50%;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px 10px 10px 10px;
+        margin: auto;
+        max-width: 100px;
+      }
+      h3 {
+        text-align: center;
+        color: rgb(27, 143, 62);
+        font-style: italic;
+        text-transform: uppercase;
+      }
+      th {
+        background-color: lightcoral;
+        color: black;
+      }
+      tr:hover {
+        background-color: greenyellow;
+      }
+      tr:nth-child(odd) {
+        background-color: lightseagreen;
+      }
+      span {
+        display: block;
+      }
+      li.one {
+        display: inline;
+        display: show;
+      }
+      li.2 {
+        display: block;
+        visibility: hide;
+      }
+      body {
+        padding: 50px;
+      }
+      div.static {
+        position: static;
+        border: 1px;
+        border-style: dashed;
+        margin: 50px;
+        max-width: 500px;
+      }
+      div.relative {
+        position: relative;
+        color: red;
+        left: 50;
+      }
+      div.fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+      }
+      div.absolute {
+        position: absolute;
+        color: brown;
+        top: 0;
+        right: 0;
+      }
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 10px;
+        margin: auto;
+        border-radius: 15px;
+        border-style: dotted;
+        max-width: 500px;
+      }
+      div:hover {
+        background-color: lightseagreen;
+      }
+      #overflow {
+        overflow: scroll;
+        width: 200px;
+        height: 100px;
+      }
     </style>
-    
-        <div class="sticky hover">
-            This page will teach you Table,Display,Max-Width and Position of CSS-class
-             </div>
-        <h3>
-            salary for the month of oct-2021
-        </h3>
-        <div style="overflow-x: auto;">
-    <table>
-            <tbody><tr>
-                <th><b>S.NO</b></th>
-                <th><b>list of Employees</b></th>
-                <th><b>B.Salary</b></th>
-                <th><b>Per Day</b></th>
-                <th><b>Leave</b></th>
-                <th><b>Working Days</b></th>
-            </tr>
-            <tr>
-                <td>01</td>
-                <td>Person A</td>
-                <td>11000</td>
-                <td>423.08</td>
-                <td>2</td>
-                <td>24</td>
-            </tr>
-            <tr>
-                <td>02</td>
-                <td>Person B</td>
-                <td>9724</td>
-                <td>374.0</td>
-                <td>6</td>
-                <td>20</td>
-            </tr>
-            <tr>
-                <td>03</td>
-                <td>Person C</td>
-                <td>11000</td>
-                <td>423.08</td>
-                <td>0</td>
-                <td>26</td>
-            </tr>
-        
-    </tbody></table><br>
-         <h3>
-                 Display
-        </h3>
-        <p>
-                 There are two types of display property<span>1.Inline</span> <span>2.Block</span>
+
+    <div class="sticky hover">
+      This page will teach you Table,Display,Max-Width and Position of CSS-class
+    </div>
+    <h3>salary for the month of oct-2021</h3>
+    <div style="overflow-x: auto">
+      <table>
+        <tr>
+          <th><b>S.NO</b></th>
+          <th><b>list of Employees</b></th>
+          <th><b>B.Salary</b></th>
+          <th><b>Per Day</b></th>
+          <th><b>Leave</b></th>
+          <th><b>Working Days</b></th>
+        </tr>
+        <tr>
+          <td>01</td>
+          <td>Person A</td>
+          <td>11000</td>
+          <td>423.08</td>
+          <td>2</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>Person B</td>
+          <td>9724</td>
+          <td>374.0</td>
+          <td>6</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>Person C</td>
+          <td>11000</td>
+          <td>423.08</td>
+          <td>0</td>
+          <td>26</td>
+        </tr>
+      </table>
+      <br />
+      <h3>Display</h3>
+      <p>
+        There are two types of display property<span>1.Inline</span>
+        <span>2.Block</span>
+      </p>
+      <h4>Inline Property ex:-List type</h4>
+      <ol>
+        <li class="one">List A</li>
+        <li class="one">List B</li>
+        <li class="one">List C</li>
+        <li class="one">List D</li>
+      </ol>
+      <h4>Block Property ex:- List type</h4>
+      <ol>
+        <li class="2; hidden">List A</li>
+        <li class="2">List B</li>
+        <li class="2; hidden">List C</li>
+        <li class="2">List D</li>
+      </ol>
+      <h3>CSS-layout position property</h3>
+      <br />
+      <h4>Position:Static</h4>
+      <div class="static">
+        <p id="overflow">
+          An element with position: static; is not positioned in any special
+          way; it is always positioned according to the normal flow of the page
         </p>
-        <h4>
-                 Inline Property ex:-List type
-        </h4>
-        <ol>
-            <li class="one">List  A</li>
-            <li class="one">List B</li>
-            <li class="one">List C</li>
-            <li class="one">List D</li>
-        </ol>
-        <h4>
-                 Block Property  ex:- List type
-        </h4>
-        <ol>
-            <li class="2; hidden">List  A</li>
-            <li class="2">List B</li>
-            <li class="2; hidden">List C</li>
-            <li class="2">List D</li>
-        </ol>
-        <h3>
-                 CSS-layout position property
-        </h3><br>
-        <h4>
-                 Position:Static
-        </h4>
-             <div class="static">
-                 <p id="overflow">
-                      An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page
-                 </p>
-             </div>
-        <h4>
-             Position:Relative
-        </h4>
-             <div class="relative">
-                 <p>
-                     This div element has position: relative.
-                </p>
-             </div>
-        <h4>
-             Position:Fixied
-        </h4>
-            <p>
-                An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
-            </p>
-                 <div class="fixed">
-                     <p>
-                         Prasanth Docuement
-                    <br></p>
-                             <p>
-                                 Position:Fixed
-                            </p>
-                 </div>
-        <h4>
-            Position:Absoulte
-        </h4>
-            <p>
-                An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
-
-            However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
-             </p>
-                 <div class="absolute">
-                            <p>
-                                Prasanth Docuement<span>Position:Absolute</span>
-                            </p>
-                 </div>
-        <h4>
-            Position:Sticky
-        </h4>
-             <p>
-                 An element with position: sticky; is positioned based on the user's scroll position.
-
-            A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
-             </p>
-    <!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-
-</div></body></html>
+      </div>
+      <h4>Position:Relative</h4>
+      <div class="relative">
+        <p>This div element has position: relative.</p>
+      </div>
+      <h4>Position:Fixied</h4>
+      <p>
+        An element with position: fixed; is positioned relative to the viewport,
+        which means it always stays in the same place even if the page is
+        scrolled. The top, right, bottom, and left properties are used to
+        position the element.
+      </p>
+      <div class="fixed">
+        <p>
+          Prasanth Docuement
+          <br />
+        </p>
+        <p>Position:Fixed</p>
+      </div>
+      <h4>Position:Absoulte</h4>
+      <p>
+        An element with position: absolute; is positioned relative to the
+        nearest positioned ancestor (instead of positioned relative to the
+        viewport, like fixed). However; if an absolute positioned element has no
+        positioned ancestors, it uses the document body, and moves along with
+        page scrolling.
+      </p>
+      <div class="absolute">
+        <p>Prasanth Docuement<span>Position:Absolute</span></p>
+      </div>
+      <h4>Position:Sticky</h4>
+      <p>
+        An element with position: sticky; is positioned based on the user's
+        scroll position. A sticky element toggles between relative and fixed,
+        depending on the scroll position. It is positioned relative until a
+        given offset position is met in the viewport - then it "sticks" in place
+        (like position:fixed).
+      </p>
+      <!-- Code injected by live-server -->
+      <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ("WebSocket" in window) {
+          (function () {
+            function refreshCSS() {
+              var sheets = [].slice.call(document.getElementsByTagName("link"));
+              var head = document.getElementsByTagName("head")[0];
+              for (var i = 0; i < sheets.length; ++i) {
+                var elem = sheets[i];
+                var parent = elem.parentElement || head;
+                parent.removeChild(elem);
+                var rel = elem.rel;
+                if (
+                  (elem.href && typeof rel != "string") ||
+                  rel.length == 0 ||
+                  rel.toLowerCase() == "stylesheet"
+                ) {
+                  var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                  elem.href =
+                    url +
+                    (url.indexOf("?") >= 0 ? "&" : "?") +
+                    "_cacheOverride=" +
+                    new Date().valueOf();
+                }
+                parent.appendChild(elem);
+              }
+            }
+            var protocol =
+              window.location.protocol === "http:" ? "ws://" : "wss://";
+            var address =
+              protocol +
+              window.location.host +
+              window.location.pathname +
+              "/ws";
+            var socket = new WebSocket(address);
+            socket.onmessage = function (msg) {
+              if (msg.data == "reload") window.location.reload();
+              else if (msg.data == "refreshcss") refreshCSS();
+            };
+            if (
+              sessionStorage &&
+              !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+            ) {
+              console.log("Live reload enabled.");
+              sessionStorage.setItem(
+                "IsThisFirstTime_Log_From_LiveServer",
+                true
+              );
+            }
+          })();
+        } else {
+          console.error(
+            "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+          );
+        }
+        // ]]>
+      </script>
+    </div>
+  </body>
+</html>
