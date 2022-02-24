@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Creating Registration Form using html & CSS</title>
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="reg.css" />
+  </head>
+
+  <body>
+    <div class="reg-outline">
+      <div class="reg-form">
+        <div class="heading">
+          <h3>registation form</h3>
+        </div>
+        <br /><br />
+        <form>
+          <div class="name">Name</div>
+          <div class="input-first">
+            <input type="text" name="firstname" placeholder="First Name" />
+          </div>
+          <div class="input-last">
+            <input type="text" name="lastname" placeholder="Last Name" />
+          </div>
+          <div class="name">Company</div>
+          <div class="company">
+            <input type="text" name="Company" placeholder="Company Name" />
+          </div>
+          <div class="name">Email</div>
+          <div class="company">
+            <input type="text" name="Email" placeholder="Mail id" />
+          </div>
+          <div class="name">Phone</div>
+          <div class="company">
+            <div class="area-code">
+              <label for="area-code" aria-placeholder="+91">
+                <select name="" id="">
+                  <option value="">+91</option>
+                  <option value="">+22</option>
+                  <option value="">+33</option>
+                  <option value="">+44</option>
+                  <option value="">+55</option>
+                </select>
+              </label>
+              <input type="text" name="phone" placeholder="95########" />
+            </div>
+            <label for="phone-number" placeholder="98********"></label>
+          </div><br>
+          <div class="name">Subject</div>
+          <div class="select">
+            <select>
+              <option value="radio" disabled="disabled" selected="selected">
+                -- choose option --
+              </option>
+              <option value="">subject 1</option>
+              <option value="">subject 2</option>
+              <option value="">subject 3</option>
+              <option value="">subject 4</option>
+              <option value="">subject 5</option>
+            </select>
+          </div>
+          <br />
+          <h4>Are You Bignner</h4>
+          <div class="select-1">
+            <label for="fill"> <input type="radio" /> YES </label>
+            <label for="fill"> <input type="radio" /> NO </label>
+          </div>
+          <button type="button">Submit</button><br><br>
+      </div>
+    </div>  
+  </body>
+</html>

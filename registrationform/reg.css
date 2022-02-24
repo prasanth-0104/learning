@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-image: url(https://www.listofdownload.com/wp-content/uploads/2017/01/tropical-wallpaper-1366x768-758x426.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 150px;
+  position: absolute;
+  opacity: 1;
+}
+
+.reg-outline {
+  background-color: lightskyblue;
+  opacity: 0.75;
+  border-radius: 50px;
+}
+
+.reg-form {
+  margin: 0;
+  width: 750px;
+  font-weight: bolder;
+  opacity: 1;
+}
+
+.reg-form .heading {
+  font-weight: bolder;
+  text-transform: uppercase;
+  line-height: 2.5;
+  width: 250px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2.5px solid black;
+  position: relative;
+  left: 275px;
+  top: 10px;
+}
+
+.reg-form .name {
+  margin-left: 25px;
+  color: black;
+}
+
+.reg-form .input-first {
+  position: relative;
+  left: 200px;
+  bottom: 35px;
+}
+
+.reg-form .input-last {
+  position: relative;
+  left: 200px;
+  bottom: 20px;
+}
+
+.company {
+  color: red;
+  position: relative;
+  left: 200px;
+  bottom: 25px;
+}
+
+.select {
+  position: relative;
+  left: 200px;
+  bottom: 30px;
+}
+
+h4 {
+  padding-left: 25px;
+}
+
+.area-code {
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  line-height: 3.5;
+}
+
+.select-1 {
+  position: relative;
+  left: 200px;
+  bottom: 20px;
+}
+
+input[type="text"],
+select {
+  width: 50%;
+  padding: 10px;
+  text-align: justify;
+  border-radius: 25px;
+}
+
+button {
+  position: relative;
+  left: 325px;
+  font-size: large;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 10px 25px 10px 25px;
+  border-radius: 25px;
+}
+
+button:hover {
+  background-color: green;
+}
