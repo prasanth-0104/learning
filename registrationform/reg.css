@@ -7,17 +7,18 @@
 
 body {
   background-image: url(https://www.listofdownload.com/wp-content/uploads/2017/01/tropical-wallpaper-1366x768-758x426.png);
-  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  margin: 150px;
-  position: absolute;
-  opacity: 1;
+  height: 100vh;
+  width: 100%;
 }
 
 .reg-outline {
   background-color: lightskyblue;
   opacity: 0.75;
   border-radius: 50px;
+  width: 650px;
+  margin: 150px;
 }
 
 .reg-form {
@@ -36,7 +37,7 @@ body {
   border-radius: 15px;
   border: 2.5px solid black;
   position: relative;
-  left: 275px;
+  left: 200px;
   top: 10px;
 }
 
@@ -97,7 +98,7 @@ select {
 
 button {
   position: relative;
-  left: 325px;
+  left: 275px;
   font-size: large;
   font-weight: bolder;
   text-transform: uppercase;
