@@ -9,6 +9,7 @@ body {
   position: absolute;
   top: 100px;
   left: 250px;
+  right: 100px;
   height: auto;
   width: 500px;
   border: solid rgb(37, 32, 32);
