@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://i.pinimg.com/originals/13/3e/83/133e8365cd3bbb466ca0f7ea1626eb02.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+}
+
+.content {
+  width: 80%;
+  height: auto;
+  padding: 5px;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+
+.company_name {
+  font-size: 35px;
+  color: orange;
+  font-weight: bolder;
+  box-shadow: 0px 0px 100px orange;
+  text-indent: 8px;
+  text-align: center;
+  padding: 2.5px;
+  border-radius: 15px;
+}
+
+.nav_list {
+  font-size: 10px;
+  padding-top: 10px;
+  padding-right: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.nav_list a {
+  padding-left: 75px;
+  text-decoration: none;
+  color: white;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: bolder;
+  transition: 0.75s ease-in-out;
+}
+
+.nav_list a:hover {
+  color: orange;
+}
+
+.search_bar {
+  padding-top: 5px;
+  position: relative;
+  left: 5px;
+}
+
+.search_bar input {
+  font-size: 15px;
+  padding: 2.5px;
+  border-radius: 10px;
+  width: 115px;
+}
+
+::placeholder {
+  font-weight: bolder;
+  padding-left: 5px;
+  text-transform: capitalize;
+}
+
+.search_btn {
+  padding-top: 5px;
+}
+
+.search_btn button {
+  font-size: 15px;
+  padding: 3.5px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  width: 100px;
+  font-weight: bolder;
+  transition: 0.75s ease-in-out;
+  box-shadow: 5px 5px 50px orange;
+}
+
+.search_btn button:hover {
+  background-color: greenyellow;
+  color: black;
+}
+
+.about {
+  width: 500px;
+  position: relative;
+  top: 50px;
+  color: white;
+  line-height: 1.25;
+}
+
+.about h1 {
+  font-size: 50px;
+}
+
+span {
+  display: block;
+  color: orange;
+  font-weight: bolder;
+}
+
+.about p {
+  font-size: 20px;
+  font-weight: bolder;
+  padding-top: 25px;
+  z-index: 10;
+}
+
+.join_btn button {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 35px;
+  left: 150px;
+  width: 150px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: orange;
+  color: white;
+  transition: 0.75s ease-in-out;
+  box-shadow: 5px 5px 50px orange;
+}
+
+.join_btn button:hover {
+  background-color: greenyellow;
+  color: black;
+}
+
+.form {
+  position: absolute;
+  right: 200px;
+  bottom: 50px;
+  height: auto;
+  width: 350px;
+  background-image: linear-gradient(
+    to right,
+    rgba(29, 22, 43, 0.5),
+    rgba(30, 24, 46, 0.5)
+  );
+  text-align: center;
+  line-height: 3.5;
+  text-transform: capitalize;
+  font-weight: bolder;
+  color: white;
+  border-radius: 40px;
+}
+
+.form .form_name button {
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 2.5px;
+  position: relative;
+  top: 10px;
+  width: 250px;
+  background-color: whitesmoke;
+  color: orange;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+.form .login_input {
+  margin: auto;
+  padding: 5px;
+}
+
+.form .login_input input {
+  background: transparent;
+  color: white;
+  border-bottom: 3.5px solid orange;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 10px;
+}
+
+.form .login_btn button {
+  text-transform: capitalize;
+  font-size: 18px;
+  width: 150px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: orange;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 5px 5px 50px orange;
+  transition: 0.75s ease-in-out;
+  position: relative;
+  top: 8px;
+}
+
+.form .login_btn button:hover {
+  background-color: greenyellow;
+  color: black;
+}
+
+.form .icons i {
+  font-size: 25px;
+  letter-spacing: 25px;
+  margin: auto;
+  padding-left: 15px;
+  color: orange;
+  justify-items: center;
+}
