@@ -149,9 +149,9 @@ span {
 }
 
 .form {
-  position: absolute;
-  right: 200px;
-  bottom: 50px;
+  position: relative;
+  left: 700px;
+  bottom: 350px;
   height: auto;
   width: 350px;
   background-image: linear-gradient(

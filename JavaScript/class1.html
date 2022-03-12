@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>JavaScript</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function my_function() {
+        document.getElementById("script").innerHTML =
+          "element has been changed";
+      }
+    </script>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0 auto;
+        padding: 25px;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        line-height: 2;
+      }
+      button {
+        width: 100px;
+        padding: 1px;
+      }
+    </style>
+    <h3>what javascript can do?</h3>
+    <p id="demo">it will change html content</p>
+    <button
+      type="button"
+      onclick='document.getElementById("demo").innerHTML="Hello World"'
+    >
+      click here</button
+    ><br />
+    <p id="demo-1">check date & time</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo-1').innerHTML= Date()"
+    >
+      click me</button
+    ><br />
+    <h3>javascript can change HTML attribute valve</h3>
+    <button
+      type="button"
+      onclick='document.getElementById("bulb").src="../on.jpg.jpg"'
+    >
+      lighton
+    </button>
+    <img id="bulb" src="../on.jpg.jpg" alt="" style="width: 10%" />
+    <button
+      type="button"
+      onclick="document.getElementById('bulb').src='../off.jpg.jpg'"
+    >
+      lightoff</button
+    ><br />
+    <h3>javascript can change css style</h3>
+    <p id="change">see change of colour and font size</p>
+    <button
+      type="button"
+      onclick='document.getElementById("change").style.color="red"'
+      ondblclick='document.getElementById("change").style.fontSize="50px"'
+    >
+      change btn(one/dbl)</button
+    ><br />
+    <h3>javascript can hide HTML element</h3>
+    <p id="hide">this element will be hide, once you click the bellow btn</p>
+    <button
+      type="button"
+      onclick='document.getElementById("hide").style.display="none"'
+    >
+      hide btn</button
+    ><br />
+    <h3>javascript can show hidden HTML element</h3>
+    <p id="show" style="display: none">hello</p>
+    <button
+      type="button"
+      onclick='document.getElementById("show").style.display="block"'
+    >
+      show btn</button
+    ><br />
+    <h3>javascript using script tag</h3>
+    <p id="script">
+      demo javascript in head, this element will change, once you select the btn
+      bellow
+    </p>
+    <button type="button" onclick="my_function()">script btn</button><br />
+    <h3>javascript output</h3>
+    <h4>innerHTML, used to change HTML content</h4>
+    <p>id attribute defines HTML element</p>
+    <p>innerHTML property defines HTML content</p>
+    <p id="output_1">this will change aft the btn click</p>
+    <script>
+      function output_1() {
+        document.getElementById("output_1").innerHTML =
+          "display output method 1";
+      }
+    </script>
+    <button type="button" onclick="output_1()">output-1</button>
+    <h4>document.wright, used for testing</h4>
+    <p>The document.write() method should only be used for testing.</p>
+    <p>
+      Never call document.write after the document has finished loading. It will
+      overwrite the whole document.
+    </p>
+    <script>
+      document.write(5 + 5);
+    </script>
+    <p>
+      wrong method, just click on bellow btn, entire document will be overwtite
+    </p>
+    <script>
+      document.wright(5 + 5);
+    </script>
+    <button type="button" onclick="document.write (5 + 5)">wrong method</button
+    ><br />
+    <h4>window.alert, give a msg in window</h4>
+    <p>while reload page, window alert will appear.</p>
+    <p>
+      window keyword is globel sope object, either we can use window.alert(x +
+      x) or use only alert(x + x)
+    </p>
+    <br />
+    <script>
+      window.alert(5 * 5);
+    </script>
+    <h4>console.log method, activate debugging</h4>
+    <p>f12 key will guide u to console property</p>
+    <p>select console btn and check the status</p>
+    <br />
+    <script>
+      console.log(5 + 5);
+    </script>
+    <h4>window.print, used to printing current page</h4>
+    <p>this page will change to print page aft u select the btn bellow</p>
+    <button type="button" onclick="window.print()">press to print</button><br />
+    <h3>javascript statements</h3>
+    <p>
+      A computer program is a list of "instructions" to be "executed" by a
+      computer.
+    </p>
+    <p style="color: red">
+      <b>
+        In a programming language, these programming instructions are called
+        statements.</b
+      >
+    </p>
+    <p>A JavaScript program is a list of programming statements.</p>
+    <br />
+    <p id="statement"></p>
+    <script>
+      let a, b, c;
+      a = 5;
+      b = 5;
+      c = a * b;
+      document.getElementById("statement").innerHTML =
+        "the valve of c is " + c + ".";
+    </script>
+    <hr />
+    <p>copy rights</p>
+  </body>
+</html>

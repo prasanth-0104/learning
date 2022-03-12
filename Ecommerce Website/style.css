@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  width: clamp(200px, 100%, 1200px);
+  margin: 50px auto;
+  height: auto;
+  border: 5px solid pink;
+  box-shadow: 10px 10px 15px 5px black;
+}
+.frontpage {
+  background: radial-gradient(
+    rgba(184, 131, 131, 0.384),
+    rgba(224, 180, 180, 0.514)
+  );
+}
+header {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: clamp(100px, 50%, 300px);
+  margin: 35px 25px;
+}
+nav {
+  flex: 50px;
+  text-align: right;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 70px;
+  text-transform: capitalize;
+}
+nav ul li a,
+i {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: rgb(39, 15, 15);
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+nav ul li i:hover {
+  color: rgb(39, 15, 15);
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.pg_1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: capitalize;
+}
+.pg_1 .col-2 {
+  flex-basis: 50%;
+  min-width: 30px;
+  padding: 30px 30px;
+}
+.pg_1 h1 {
+  font-size: clamp(10px, 35px, 75px);
+}
+.pg_1 .col-2 img {
+  max-width: 100%;
+  width: clamp(10%, 95%, 100%);
+}
+
+.pg_1 p {
+  font-size: clamp(10px, 14px, 25px);
+  line-height: 20px;
+  padding-top: 15px;
+  font-weight: 600;
+}
+
+.pg_1 a {
+  font-size: clamp(5px, 16px, 25px);
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 7px;
+  border-radius: 25px;
+  border: 1px solid black;
+  background-color: orange;
+  font-weight: bolder;
+  box-shadow: 10px 10px 10px 7px rgb(218, 57, 57);
+  transition: 0.5s ease-in;
+  margin-left: 0px;
+}
+
+.pg_1 a:hover {
+  font-size: 20px;
+  background-color: greenyellow;
+}
+
+button {
+  width: 10%;
+}
+
+/* second page */
+
+.small_container .col-3 {
+  margin: 100px auto;
+  width: clamp(25%, 75%, 100%);
+  padding-bottom: -200px;
+}
+.small_container .col-3 ul {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+}
+
+.small_container .col-3 ul li {
+  justify-items: center;
+}
+
+.small_container .col-3 img {
+  width: clamp(25%, 95%, 100%);
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px 1px rgb(202, 155, 155);
+}
+.fe_pro {
+  margin: 100px auto;
+  width: clamp(25%, 75%, 100%);
+}
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 50px;
+  font-size: clamp(2px, 20px, 25px);
+  border-bottom: 5px solid orange;
+  margin: 0px 0px;
+}
+
+.fe_pro .col-4 {
+}
+
+.fe_pro .col-4 ul {
+  display: flex;
+  padding-top: 25px;
+  justify-items: center;
+}
+
+.fe_pro .col-4 ul li {
+  list-style: none;
+}
+
+.fe_pro .col-4 ul li img {
+  width: clamp(25%, 80%, 100%);
+  border-radius: 25px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 5px 5px 30px 1px rgb(202, 155, 155);
+}
+
+.fe_pro .about {
+  text-align: left;
+  font-weight: 500;
+  padding-top: 15px;
+  font-size: clamp(2px, 16px, 18px);
+}
+.fe_pro .about i {
+  color: darkorange;
+  font-size: clamp(2px, 16px, 18px);
+}
+
+.fe_pro .col-4 ul li img:hover {
+  width: clamp(25%, 90%, 95%);
+}
+
+.lat {
+  margin: 100px auto;
+  width: clamp(25%, 75%, 100%);
+}
+
+.lat .col-4 ul {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr 4fr;
+  grid-template-rows: 350px;
+  place-items: center;
+}
+
+.lat .col-4 ul li {
+  list-style: none;
+}
+
+.lat .col-4 ul li img {
+  width: clamp(25%, 80%, 100%);
+  border-radius: 25px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 5px 5px 30px 1px rgb(202, 155, 155);
+}
+
+.lat .about {
+  text-align: left;
+  font-weight: 500;
+  padding-top: 15px;
+  font-size: clamp(2px, 16px, 18px);
+}
+.lat .about i {
+  color: darkorange;
+  font-size: clamp(2px, 16px, 18px);
+}
+
+.lat .col-4 ul li img:hover {
+  width: clamp(25%, 90%, 95%);
+}
+
+.ex .row .col2 {
+  display: flex;
+  width: clamp(20%, 75%, 100%);
+  margin: 0 auto;
+}
+
+.ex .row .col2 img {
+  width: clamp(20%, 50%, 100%);
+}
+
+.ex .row .col3 p,
+h1 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.ex h1 {
+  text-transform: capitalize;
+}
+
+.ex button {
+  width: clamp(10%, 50%, 100%);
+  margin-left: 75px;
+  margin-top: 15px;
+  padding: 5px;
+  background-color: orange;
+  font-weight: bold;
+  border-radius: 25px;
+  font-size: 20px;
+}
+
+.ex {
+  background: radial-gradient(
+    rgba(184, 131, 131, 0.384),
+    rgba(224, 180, 180, 0.514)
+  );
+  margin: 50px auto;
+}
+
+hr {
+  border: 5px solid orange;
+  border-radius: 50px;
+  margin: 25px 100px;
+}
+
+h5 {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 25px auto;
+}
+
+h5 i {
+  color: red;
+}
