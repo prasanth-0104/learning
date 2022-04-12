@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 100px auto;
+  height: auto;
+  width: clamp(8.5in, 75%, 12in);
+}
+
+div.container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background-color: rgba(82, 207, 186, 0.452);
+}
+div.cv_left {
+  background-color: rgb(8, 146, 135);
+  width: clamp(1%, 90%, 100%);
+  height: auto;
+}
+
+input {
+  margin: 20px 15px;
+  width: clamp(1%, 95%, 100%);
+  font-size: clamp(1px, 15px, 20px);
+  height: auto;
+  font-size: 15px;
+  padding: 0px;
+  background: transparent;
+  font-weight: bolder;
+  color: black;
+  border: none;
+  text-transform: capitalize;
+}
+
+ul li input {
+  margin: 20px 15px;
+  width: clamp(1%, 50%, 100%);
+  font-size: clamp(1px, 16px, 20px);
+  height: auto;
+  font-size: 20px;
+  padding: 0px;
+  background: transparent;
+  font-weight: bolder;
+  color: black;
+  border: none;
+  text-transform: capitalize;
+}
+
+::placeholder {
+  color: black;
+  font-style: italic;
+  font-size: clamp(1px, 16px, 20px);
+}
+
+div.ph_num {
+  display: flex;
+  justify-items: space-around;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+div.pic {
+  width: clamp(1%, 100%, 100%);
+  margin: 0px 0px;
+  
+}
+
+div.pic img {
+  width: clamp(1%, 100%, 100%);
+  height: 50%;
+  margin: 0px auto;
+  /* border: 3px solid rgb(14, 138, 101);
+  border-radius: 50%;
+  background: transparent; */
+}
+
+div.cv_left h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  padding: 15px;
+  font-size: clamp(1px, 20px, 30px);
+}
+
+hr {
+  border: none;
+  border-bottom: 8px solid whitesmoke;
+  margin: auto 80px;
+  border-radius: 25px;
+}
+
+ul li i {
+  color: white;
+  z-index: 1;
+  padding-top: 25px;
+  text-indent: clamp(5px, 15px, 25px);
+  padding-right: 10px;
+
+}
+
+.cv_right {
+  margin: 0px 10px;s
+  padding-left: 15px;
+  line-height: 35px;
+}
+
+div.name {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 25px;
+  font-family: sans-serif;
+  font-size: clamp(10px, 20px, 30px);
+  
+}
+
+.cv_right h2 {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: clamp(10px, 20px, 25px);
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.cv_right p {
+  font-size: clamp(10px, 16px, 20px);
+  line-height: 20px;
+  margin-left: 100px;
+  padding-top: 10px;
+}
+
+.cv_right ul {
+  list-style-type: circle;
+}
+
+.cv_right ul li {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.cv_right h4 {
+  margin-left: 40px;
+  font-size: clamp(10px, 16px, 20px);
+}
+
+.cv_right hr {
+  width: clamp(1px, 100%, 100%);
+  margin: 0;
+  border: none;
+  border-bottom: 5px solid black;
+  border-radius: 70px;
+  
+}
+
+
